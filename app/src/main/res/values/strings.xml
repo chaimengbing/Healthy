@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Health</string>
 
+    <!-- 首页 -->
+    <string name="Infrared_pic">红外图片</string>
+    <string name="declare">申报验放</string>
+    <string name="quarantine">检疫查验</string>
+    <string name="test_result">检测结果</string>
+    <string name="singal_case">个案溯源</string>
+    <string name="browsing">疫情浏览</string>
+    <string name="study_place">学习园地</string>
+    <string name="work_log">工作日志</string>
+    <string name="query_statistics">查询统计</string>
+
 
     <string name="input_user_name">请输入用户名或手机号</string>
     <string name="input_password">请输入密码</string>
@@ -13,4 +24,6 @@
     <string name="user_name">登录人</string>
     <string name="login_time">登录时间</string>
     <string name="forget_pwd">找回密码</string>
+
+
 </resources>

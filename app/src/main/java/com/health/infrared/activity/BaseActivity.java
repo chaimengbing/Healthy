@@ -48,10 +48,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * 显示用户提示
      */
-    public void showToast(String content) {
-        Toast toast = Toast.makeText(getApplicationContext(), content, Toast.LENGTH_SHORT);
+    public void showToast(String message) {
+        Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
-        toast.setText(content);
+        toast.setText(message);
         toast.show();
     }
 
