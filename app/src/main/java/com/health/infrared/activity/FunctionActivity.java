@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.health.infrared.R;
 import com.health.infrared.adapter.TabFragmentPagerAdapter;
 import com.health.infrared.commconfig.CommEventEntry;
+import com.health.infrared.fragment.QuarantineEnterFragment;
 import com.health.infrared.fragment.QuarantineFragment;
 import com.health.infrared.utils.DateUtil;
 
@@ -47,7 +48,8 @@ public class FunctionActivity extends BaseActivity {
     android.support.design.widget.TabLayout tableLayout;
 
     //采集样品
-    private String[] functionArray = new String[]{"检查登记", "流行病毒调查", "医学排查", "病例处置", "采集样品"};
+//    private String[] functionArray = new String[]{"检查登记", "流行病毒调查", "医学排查", "病例处置", "采集样品"};
+    private String[] functionArray = new String[]{"检疫查询", "检疫查验录入"};
     private List<Fragment> functionFragment = new ArrayList<>();
 
     @Override
@@ -61,10 +63,7 @@ public class FunctionActivity extends BaseActivity {
             functionName = getIntent().getStringExtra(CommEventEntry.HOME_NAME);
         }
         functionFragment.add(new QuarantineFragment());
-        functionFragment.add(new QuarantineFragment());
-        functionFragment.add(new QuarantineFragment());
-        functionFragment.add(new QuarantineFragment());
-        functionFragment.add(new QuarantineFragment());
+        functionFragment.add(new QuarantineEnterFragment());
     }
 
     @Override
