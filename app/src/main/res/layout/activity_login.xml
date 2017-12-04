@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/free_rounded"
-            android:hint="输入用户名"
+            android:hint="@string/input_user_name"
             android:inputType="text"
             android:textSize="14sp" />
 
@@ -34,7 +34,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="2dp"
             android:background="@drawable/free_rounded"
-            android:hint="输入密码"
+            android:hint="@string/input_password"
             android:inputType="textPassword"
             android:textSize="14sp" />
 
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="登 录" />
+            android:text="@string/login" />
 
     </LinearLayout>
 
