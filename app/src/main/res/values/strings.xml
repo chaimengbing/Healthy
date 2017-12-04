@@ -2,8 +2,8 @@
     <string name="app_name">Health</string>
 
 
-    <string name="input_user_name">输入用户名</string>
-    <string name="input_password">输入密码</string>
+    <string name="input_user_name">请输入用户名或手机号</string>
+    <string name="input_password">请输入密码</string>
     <string name="login">登录</string>
     <string name="back">返回</string>
     <string name="please_input">请输入用户名或密码</string>
@@ -12,4 +12,5 @@
     <string name="red_pic">红外图片</string>
     <string name="user_name">登录人</string>
     <string name="login_time">登录时间</string>
+    <string name="forget_pwd">找回密码</string>
 </resources>

@@ -55,6 +55,8 @@ public class MainActivity extends BaseActivity {
         homeGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Intent intent = new Intent(getApplicationContext(), TestAct.class);
+//                startActivity(intent);
                 Intent intent = new Intent(getApplicationContext(), FunctionActivity.class);
                 HomeItem homeItem = (HomeItem) homeGriAdapter.getItem(position);
                 intent.putExtra(CommEventEntry.HOME_NAME, homeItem.getName());

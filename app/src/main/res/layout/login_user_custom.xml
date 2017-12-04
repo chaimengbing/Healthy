@@ -20,7 +20,7 @@
         android:gravity="center"
         android:text="@string/user_name"
         android:textColor="@color/black"
-        android:textSize="@dimen/title_right_font_size" />
+        android:textSize="@dimen/font_size_14" />
 
 
     <TextView
@@ -31,6 +31,6 @@
         android:gravity="center"
         android:text="@string/login_time"
         android:textColor="@color/black"
-        android:textSize="@dimen/title_right_font_size" />
+        android:textSize="@dimen/font_size_14" />
 
 </LinearLayout>

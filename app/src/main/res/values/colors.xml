@@ -6,6 +6,7 @@
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="gray">#aeaeae</color>
 
     <color name="button_top_bottom_focused_solid">@color/colorPrimary</color>
     <color name="button_top_bottom_focused_storke">@color/colorPrimaryDark</color>

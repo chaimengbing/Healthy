@@ -10,9 +10,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_margin="@dimen/x10"
-        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
@@ -21,26 +21,70 @@
             android:layout_gravity="center_horizontal"
             android:src="@mipmap/ic_launcher" />
 
-        <EditText
-            android:id="@+id/username_edittext"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x60"
-            android:layout_gravity="center"
-            android:background="@drawable/free_rounded"
-            android:hint="@string/input_user_name"
-            android:inputType="text"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/password_edittext"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/free_icon_phone" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/username_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/free_rounded"
+                android:hint="@string/input_user_name"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x60"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:background="@drawable/free_rounded"
-            android:hint="@string/input_password"
-            android:inputType="textPassword"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/free_icon_pwd" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/free_rounded"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/login_button"
@@ -51,6 +95,15 @@
             android:background="@drawable/free_login_button"
             android:text="@string/login"
             android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:gravity="right"
+            android:text="@string/forget_pwd"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_12" />
 
     </LinearLayout>
 
