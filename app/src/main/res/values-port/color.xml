@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		Copyright (C) 2008 ZXing authors Licensed under the Apache License,
+		Version 2.0 (the "License"); you may not use this file except in
+		compliance with the License. You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+-->
+<resources>
+
+    <!-- All color -->
+    <color name="black">#000000</color>
+    <color name="tran_black">#00000000</color>
+    <color name="trans_95_black">#f2232323</color>
+    <color name="trans_85_black">#d9666666</color>
+    <color name="register_green">#0C9927</color>
+    <color name="point_green">#65cc6b</color>
+    <color name="text_gray">#626262</color>
+    <color name="red">#ff0001</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 浅灰蓝色 -->
+    <color name="grayblue">#A6BAC6</color>
+    <!-- 浅灰色 -->
+    <color name="lightgray">#d1d4da</color>
+    <!-- 浅蓝 -->
+    <color name="lightblue">#729ad8</color>
+    <!-- 深蓝 -->
+    <color name="deepblue">#2b579a</color>
+    <!-- 乳白色 -->
+    <color name="ivorywhite">#E6E5E0</color>
+    <!-- 灰色 -->
+    <color name="value_text">#aeaeae</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透 -->
+    <color name="half_transparent">#88000000</color>
+    <!-- 灰色半透 -->
+    <color name="gray_half_transparent">#882f4f4f</color>
+    <color name="color_app_name">#494949</color>
+    <color name="color_app_detail">#808183</color>
+    <color name="color_app_state">#b64942</color>
+    <color name="color_title">#ffffff</color>
+    <color name="color_bg">#d9dce7</color>
+    <color name="blue">#2684cc</color>
+    <color name="vertical_seekbar">#101217</color>
+    <color name="gray">#666666</color>
+    <color name="float_transparent">#66000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="contact_fragment_bg_color">#00000000</color>
+    <color name="pane_left_bg_color">#2b579a</color>
+    <!-- <color name="contact_fragmentp_bg_color">#a7ceab</color> -->
+    <color name="contact_fragmentp_bg_color">#afceb5</color>
+    <!-- <color name="contact_fragmentp_bg_color">#a1af9d</color> -->
+    <!-- <color name="setting_pressed_bg_color">#afceb5</color> -->
+    <color name="setting_pressed_bg_color">#cfd8d0</color>
+    <color name="pane_color">#afceb5</color>
+    <color name="contact_detail_color">#5b7167</color>
+    <color name="video_number_color_normal">#565656</color>
+    <color name="video_number_color_pressed">#b0cfe4</color>
+    <color name="sub_title_color">#1d2a27</color>
+    <color name="setting_select_color">#cccccc</color>
+    <!-- <color name="setting_pressed_bg_color">#a9b6a6</color> -->
+
+
+    <!-- 与设置有关颜色 -->
+    <color name="divider">#1d559a</color>
+    <color name="divider_h">#ababab</color>
+    <color name="setting_left_title">#1d559a</color>
+    <color name="setting_group">#757e9b</color>
+    <color name="setting_group_lv">#90a88a</color>
+    <color name="setting_list_item">#202945</color>
+    <color name="add_contact">#90a88a</color>
+    <color name="video_num_clolor">#343A3D</color>
+    <color name="add_contact_select">#eeeeee</color>
+    <color name="setting_subtitle">#c5d4e0</color>
+    <color name="setting_item_bg">#f5f7f8</color>
+    <!-- <color name="list_diver_color">#e9e9e9</color> -->
+    <color name="list_diver_color">#afceb5</color>
+    <color name="call_record_pressed_color">#103367</color>
+    <!-- 未选中 -->
+    <color name="call_record_normal_color">#03b1d3</color>
+    <!-- 选中 -->
+    <color name="call_record_item_color">#505874</color>
+    <color name="controller_background">#090909</color>
+    <color name="calltype_cut">#cdcdcd</color>
+    <color name="calltype_bg">#898989</color>
+    <color name="selecttime_bg">#e2e3e6</color>
+    <color name="time_button_bg">#007aff</color>
+    <color name="divier">#292e27</color>
+    <color name="item_bg">#a9bbc8</color>
+    <color name="device_title">#2c5593</color>
+    <color name="time_clickable">#3C91C5</color>
+    <color name="selected_color">#bdd6eb</color>
+
+    <color name="top_exit_btn_bg">#729ad8</color>
+    <color name="dial_bg">#efefef</color>
+
+    <color name="setting_item_unenabled">#7f7f7f</color>
+    <!-- 通话记录设置界面title背景色    比CBCBCB 轻的是 dcdcdc-->
+    <color name="setting_callrecord_title">#cbcbcb</color>
+
+
+    <color name="lock_screen_bg">#99000000</color>
+    <color name="ptz_bg">#dcdcdc</color>
+    <color name="ptz_progress">#729ad8</color>
+    <color name="spinner_select">#729ad8</color>
+
+    <color name="conf_member_status_idle">#ff2b11</color>
+    <color name="conf_member_status_ringing">#ffc600</color>
+    <color name="conf_member_status_connected">#59da6d</color>
+
+    <!--UIButton-->
+    <color name="color_pressed">#9c000000</color>
+    <color name="ripple_color">#ffeeeeee</color>
+
+    <color name="level_blue">#0071B7</color>
+    <color name="transparent_05_black">#0d000000</color>
+    <color name="checked">#263c5d</color>
+    <color name="sidebar_bg">#CFD3D9</color>
+    <color name="item_select_text_color">#525252</color>
+    <!--通话界面-->
+    <color name="color_calling_text">#5EC763</color>
+    <color name="color_calling_home_text">#366DA9</color>
+    <color name="color_checked">#bdd6eb</color>
+    <color name="color_call_checked">#0a89ff</color>
+    <color name="underline_default_color">#979797</color>
+    <color name="underline_selected_color">#000</color>
+    <color name="hintColor">#CCCCCC</color>
+    <color name="textColor">#000</color>
+
+    <!-- 通话记录 -->
+    <color name="record_line">#AFB6BC</color>
+    <color name="record_info_click">#ffbbbbbb</color>
+
+    <color name="sild_down_function_key">#717171</color>
+
+    <color name="label_background">#6eaee5</color>
+    
+    <!-- 即时消息 -->
+    <color name="im_frame">#8599b0</color>
+
+    <color name="service_status_pop_background">#f7f8f8</color>
+
+</resources>

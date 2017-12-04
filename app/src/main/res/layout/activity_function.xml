@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.health.infrared.activity.FunctionActivity">
+
+    <include layout="@layout/toolbar_custom" />
+
+    <include layout="@layout/login_user_custom" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:background="@drawable/border_bottom"
+        android:divider="@drawable/tab_layout_divider"
+        android:padding="0.6dp"
+        android:paddingLeft="@dimen/x2"
+        android:paddingRight="@dimen/x2"
+        android:showDividers="middle|beginning|end"
+        app:tabBackground="@drawable/tablayout_selector"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance"
+        app:tabTextColor="@color/black"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/function_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10" />
+
+</LinearLayout>

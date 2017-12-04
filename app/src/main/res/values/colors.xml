@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="button_top_bottom_focused_solid">@color/colorPrimary</color>
+    <color name="button_top_bottom_focused_storke">@color/colorPrimaryDark</color>
+    <color name="button_top_bottom_pressed_solid">@color/transparent</color>
+    <color name="button_top_bottom_pressed_storke">@color/colorPrimaryDark</color>
 </resources>

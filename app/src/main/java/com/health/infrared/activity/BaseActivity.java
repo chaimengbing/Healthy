@@ -2,9 +2,13 @@ package com.health.infrared.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
+
+import butterknife.ButterKnife;
 
 
 /**
@@ -18,6 +22,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         try {
             super.onCreate(savedInstanceState);
             setContentView(getLayoutView());
+            ButterKnife.bind(this);
             initData();
             initComponentViews();
         } catch (Exception e) {
@@ -39,6 +44,16 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 方法说明 : 初始化页面控件的布局
      */
     public abstract void initComponentViews();
+
+    /**
+     * 显示用户提示
+     */
+    public void showToast(String content) {
+        Toast toast = Toast.makeText(getApplicationContext(), content, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setText(content);
+        toast.show();
+    }
 
     @Override
     protected void onResume() {

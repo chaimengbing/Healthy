@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="title_font_size">18sp</dimen>
+    <dimen name="title__left_font_size">16sp</dimen>
+    <dimen name="title_right_font_size">14sp</dimen>
+
+
+    <!--button只有上下边框-->
+    <dimen name="button_top_bottom_normal">0.5dp</dimen>
+    <dimen name="button_top_bottom_focused">0.5dp</dimen>
+    <dimen name="button_top_bottom_pressed">0.5dp</dimen>
+</resources>
