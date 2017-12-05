@@ -11,7 +11,7 @@ import com.health.infrared.fragment.BaseFragment;
 public class CaseIdeaFragment extends BaseFragment {
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_clinical;
+        return R.layout.fragment_case_idea;
     }
 
     @Override
