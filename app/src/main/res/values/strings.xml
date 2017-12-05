@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Health</string>
+    <string name="app_name">卫生检疫查验</string>
 
     <!-- 首页 -->
     <string name="Infrared_pic">红外图片</string>

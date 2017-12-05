@@ -36,56 +36,56 @@ public class MainActivity extends BaseActivity {
         //红外图片
         MainItem mainItem = new MainItem();
         mainItem.setType(CommEventEntry.TYPE_INFAREDPIC);
-        mainItem.setImgId(R.mipmap.ic_launcher);
+        mainItem.setImgId(R.mipmap.hongwaitupian);
         mainItem.setName(getString(R.string.Infrared_pic));
         mainList.add(mainItem);
 
         //申报验放
         MainItem mainItem1 = new MainItem();
-        mainItem1.setImgId(R.mipmap.ic_launcher);
+        mainItem1.setImgId(R.mipmap.shenbaoyanshou);
         mainItem1.setName(getString(R.string.declare));
         mainList.add(mainItem1);
 
         //检疫查验
         MainItem mainItem2 = new MainItem();
         mainItem2.setType(CommEventEntry.TYPE_QUARANTINE);
-        mainItem2.setImgId(R.mipmap.ic_launcher);
+        mainItem2.setImgId(R.mipmap.jianyichayan);
         mainItem2.setName(getString(R.string.quarantine));
         mainList.add(mainItem2);
 
         //检测结果
         MainItem mainItem3 = new MainItem();
-        mainItem3.setImgId(R.mipmap.ic_launcher);
+        mainItem3.setImgId(R.mipmap.jianchajeguo);
         mainItem3.setName(getString(R.string.test_result));
         mainList.add(mainItem3);
 
         //个案溯源
         MainItem mainItem4 = new MainItem();
-        mainItem4.setImgId(R.mipmap.ic_launcher);
+        mainItem4.setImgId(R.mipmap.geansuyuan);
         mainItem4.setName(getString(R.string.singal_case));
         mainList.add(mainItem4);
 
         //疫情浏览
         MainItem mainItem5 = new MainItem();
-        mainItem5.setImgId(R.mipmap.ic_launcher);
+        mainItem5.setImgId(R.mipmap.wenqingliulan);
         mainItem5.setName(getString(R.string.browsing));
         mainList.add(mainItem5);
 
         //学习园地
         MainItem mainItem6 = new MainItem();
-        mainItem6.setImgId(R.mipmap.ic_launcher);
+        mainItem6.setImgId(R.mipmap.xuexiyuandi);
         mainItem6.setName(getString(R.string.study_place));
         mainList.add(mainItem6);
 
         //工作日志
         MainItem mainItem7 = new MainItem();
-        mainItem7.setImgId(R.mipmap.ic_launcher);
+        mainItem7.setImgId(R.mipmap.gongzuorizhi);
         mainItem7.setName(getString(R.string.work_log));
         mainList.add(mainItem7);
 
         //查询统计
         MainItem mainItem8 = new MainItem();
-        mainItem8.setImgId(R.mipmap.ic_launcher);
+        mainItem8.setImgId(R.mipmap.chaxuntongji);
         mainItem8.setName(getString(R.string.query_statistics));
         mainList.add(mainItem8);
     }

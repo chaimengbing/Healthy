@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/x240"
-    android:background="?attr/colorPrimary"
+    android:background="@mipmap/beijing"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/x20"
         android:gravity="center"
         android:text="@string/user_name"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/font_size_14" />
 
 
@@ -31,7 +31,7 @@
         android:layout_marginTop="@dimen/x5"
         android:gravity="center"
         android:text="@string/login_time_cus"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/font_size_14" />
 
 </LinearLayout>

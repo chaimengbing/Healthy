@@ -39,10 +39,10 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
                 android:layout_gravity="center_vertical"
-                android:src="@mipmap/free_icon_phone" />
+                android:src="@mipmap/free_icon_photo" />
 
             <View
                 android:layout_width="@dimen/x1"
@@ -72,8 +72,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
                 android:layout_gravity="center_vertical"
                 android:src="@mipmap/free_icon_pwd" />
 
