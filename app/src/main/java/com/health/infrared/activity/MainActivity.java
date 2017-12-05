@@ -7,9 +7,9 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.health.infrared.R;
-import com.health.infrared.adapter.HomeGriAdapter;
+import com.health.infrared.adapter.MainGriAdapter;
 import com.health.infrared.commconfig.CommEventEntry;
-import com.health.infrared.model.HomeItem;
+import com.health.infrared.model.MainItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,19 +17,12 @@ import java.util.List;
 import butterknife.BindView;
 
 public class MainActivity extends BaseActivity {
-    //title toolbar
-    @BindView(R.id.back_textview)
-    TextView backTextView;
-    @BindView(R.id.title_textview)
-    TextView titleTextView;
-    @BindView(R.id.right_textview)
-    TextView rightTextView;
 
-    @BindView(R.id.home_gridview)
-    GridView homeGridView;
+    @BindView(R.id.main_gridview)
+    GridView mainGridView;
 
-    private HomeGriAdapter homeGriAdapter;
-    private List<HomeItem> homeList;
+    private MainGriAdapter mainGriAdapter;
+    private List<MainItem> mainList;
 
     @Override
     public int getLayoutView() {
@@ -38,84 +31,78 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        homeList = new ArrayList<>();
+        mainList = new ArrayList<>();
 
         //红外图片
-        HomeItem homeItem = new HomeItem();
-        homeItem.setImgId(R.mipmap.ic_launcher);
-        homeItem.setName(getString(R.string.Infrared_pic));
-        homeList.add(homeItem);
+        MainItem mainItem = new MainItem();
+        mainItem.setImgId(R.mipmap.ic_launcher);
+        mainItem.setName(getString(R.string.Infrared_pic));
+        mainList.add(mainItem);
 
         //申报验放
-        HomeItem homeItem1 = new HomeItem();
-        homeItem1.setImgId(R.mipmap.ic_launcher);
-        homeItem1.setName(getString(R.string.declare));
-        homeList.add(homeItem1);
+        MainItem mainItem1 = new MainItem();
+        mainItem1.setImgId(R.mipmap.ic_launcher);
+        mainItem1.setName(getString(R.string.declare));
+        mainList.add(mainItem1);
 
         //检疫查验
-        HomeItem homeItem2 = new HomeItem();
-        homeItem2.setImgId(R.mipmap.ic_launcher);
-        homeItem2.setName(getString(R.string.quarantine));
-        homeList.add(homeItem2);
+        MainItem mainItem2 = new MainItem();
+        mainItem2.setImgId(R.mipmap.ic_launcher);
+        mainItem2.setName(getString(R.string.quarantine));
+        mainList.add(mainItem2);
 
         //检测结果
-        HomeItem homeItem3 = new HomeItem();
-        homeItem3.setImgId(R.mipmap.ic_launcher);
-        homeItem3.setName(getString(R.string.test_result));
-        homeList.add(homeItem3);
+        MainItem mainItem3 = new MainItem();
+        mainItem3.setImgId(R.mipmap.ic_launcher);
+        mainItem3.setName(getString(R.string.test_result));
+        mainList.add(mainItem3);
 
         //个案溯源
-        HomeItem homeItem4 = new HomeItem();
-        homeItem4.setImgId(R.mipmap.ic_launcher);
-        homeItem4.setName(getString(R.string.singal_case));
-        homeList.add(homeItem4);
+        MainItem mainItem4 = new MainItem();
+        mainItem4.setImgId(R.mipmap.ic_launcher);
+        mainItem4.setName(getString(R.string.singal_case));
+        mainList.add(mainItem4);
 
         //疫情浏览
-        HomeItem homeItem5 = new HomeItem();
-        homeItem5.setImgId(R.mipmap.ic_launcher);
-        homeItem5.setName(getString(R.string.browsing));
-        homeList.add(homeItem5);
+        MainItem mainItem5 = new MainItem();
+        mainItem5.setImgId(R.mipmap.ic_launcher);
+        mainItem5.setName(getString(R.string.browsing));
+        mainList.add(mainItem5);
 
         //学习园地
-        HomeItem homeItem6 = new HomeItem();
-        homeItem6.setImgId(R.mipmap.ic_launcher);
-        homeItem6.setName(getString(R.string.study_place));
-        homeList.add(homeItem6);
+        MainItem mainItem6 = new MainItem();
+        mainItem6.setImgId(R.mipmap.ic_launcher);
+        mainItem6.setName(getString(R.string.study_place));
+        mainList.add(mainItem6);
 
         //工作日志
-        HomeItem homeItem7 = new HomeItem();
-        homeItem7.setImgId(R.mipmap.ic_launcher);
-        homeItem7.setName(getString(R.string.work_log));
-        homeList.add(homeItem7);
+        MainItem mainItem7 = new MainItem();
+        mainItem7.setImgId(R.mipmap.ic_launcher);
+        mainItem7.setName(getString(R.string.work_log));
+        mainList.add(mainItem7);
 
         //查询统计
-        HomeItem homeItem8 = new HomeItem();
-        homeItem8.setImgId(R.mipmap.ic_launcher);
-        homeItem8.setName(getString(R.string.query_statistics));
-        homeList.add(homeItem8);
-//        for (int i = 0; i < 9; i++) {
-//            HomeItem homeItem = new HomeItem();
-//            homeItem.setImgId(R.mipmap.ic_launcher);
-//            homeItem.setName("红外图片");
-//            homeList.add(homeItem);
-//        }
+        MainItem mainItem8 = new MainItem();
+        mainItem8.setImgId(R.mipmap.ic_launcher);
+        mainItem8.setName(getString(R.string.query_statistics));
+        mainList.add(mainItem8);
     }
 
     @Override
     public void initComponentViews() {
         initToolbar();
-        homeGriAdapter = new HomeGriAdapter(getApplicationContext(), homeList);
-        homeGridView.setAdapter(homeGriAdapter);
-        homeGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mainGriAdapter = new MainGriAdapter(getApplicationContext(), mainList);
+        mainGridView.setAdapter(mainGriAdapter);
+        mainGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                HomeItem homeItem = (HomeItem) homeGriAdapter.getItem(position);
+                MainItem mainItem = (MainItem) mainGriAdapter.getItem(position);
                 if (position == 2) {
-                    Intent intent = new Intent(getApplicationContext(), FunctionActivity.class);
-                    intent.putExtra(CommEventEntry.HOME_NAME, homeItem.getName());
+                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    intent.putExtra(CommEventEntry.HOME_NAME, mainItem.getName());
                     startActivity(intent);
                 } else {
-                    showToast(homeItem.getName() + " 功能尚未开放");
+                    showToast(mainItem.getName() + " 功能尚未开放");
                 }
             }
         });

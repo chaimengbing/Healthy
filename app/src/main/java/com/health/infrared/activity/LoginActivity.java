@@ -20,15 +20,6 @@ import butterknife.OnClick;
 public class LoginActivity extends BaseActivity {
 
 
-    //title toolbar
-    @BindView(R.id.back_textview)
-    TextView backTextView;
-    @BindView(R.id.title_textview)
-    TextView titleTextView;
-    @BindView(R.id.right_textview)
-    TextView rightTextView;
-
-
     @BindView(R.id.login_button)
     Button loginButton;
     @BindView(R.id.username_edittext)
@@ -53,9 +44,9 @@ public class LoginActivity extends BaseActivity {
     }
 
     private void initToolbar() {
-        backTextView.setVisibility(View.GONE);
+        hideBackText();
+        setRightText(getString(R.string.register));
         titleTextView.setText(getString(R.string.login));
-        rightTextView.setText(R.string.register);
     }
 
     @OnClick(R.id.login_button)

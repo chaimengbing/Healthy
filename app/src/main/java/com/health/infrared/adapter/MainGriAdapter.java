@@ -7,7 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.health.infrared.R;
-import com.health.infrared.model.HomeItem;
 import com.health.infrared.model.MainItem;
 import com.orhanobut.logger.Logger;
 
@@ -20,9 +19,9 @@ import butterknife.ButterKnife;
  * Created by 123 on 2017/12/4.
  */
 
-public class HomeGriAdapter extends Base<HomeItem> {
+public class MainGriAdapter extends Base<MainItem> {
 
-    public HomeGriAdapter(Context context, List<HomeItem> list) {
+    public MainGriAdapter(Context context, List<MainItem> list) {
         super(context, list);
     }
 
@@ -38,9 +37,9 @@ public class HomeGriAdapter extends Base<HomeItem> {
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            HomeItem homeItem = list.get(position);
-            viewHolder.titleImageView.setImageResource(homeItem.getImgId());
-            viewHolder.titleTextView.setText(homeItem.getName());
+            MainItem mainItem = list.get(position);
+            viewHolder.titleImageView.setImageResource(mainItem.getImgId());
+            viewHolder.titleTextView.setText(mainItem.getName());
         } catch (Exception e) {
             Logger.e(e.toString());
         }

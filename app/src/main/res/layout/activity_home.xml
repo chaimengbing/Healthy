@@ -9,7 +9,7 @@
     <include layout="@layout/toolbar_custom" />
 
     <GridView
-        android:id="@+id/main_gridview"
+        android:id="@+id/home_gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/x30"

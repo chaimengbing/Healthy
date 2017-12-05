@@ -3,11 +3,15 @@ package com.health.infrared.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
+import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.health.infrared.R;
 import com.orhanobut.logger.Logger;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
@@ -16,6 +20,14 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseActivity extends AppCompatActivity {
     private static final String TAG = BaseActivity.class.getName();
+
+    //title toolbar
+    @BindView(R.id.back_textview)
+    TextView backTextView;
+    @BindView(R.id.title_textview)
+    TextView titleTextView;
+    @BindView(R.id.right_textview)
+    TextView rightTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +58,60 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract void initComponentViews();
 
     /**
+     * 设置返回
+     */
+    public void setBackText() {
+        if (backTextView != null) {
+            backTextView.setText(getString(R.string.back));
+        }
+    }
+
+    /**
+     * 隐藏返回
+     */
+    public void hideBackText() {
+        if (backTextView != null) {
+            backTextView.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * 标题返回
+     */
+    public void setTitleText(String message) {
+        if (titleTextView != null) {
+            titleTextView.setText(message);
+        }
+    }
+
+    /**
+     * 标题返回
+     */
+    public void hideTitleText() {
+        if (titleTextView != null) {
+            titleTextView.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * 标题返回
+     */
+    public void setRightText(String message) {
+        if (rightTextView != null) {
+            rightTextView.setText(message);
+        }
+    }
+
+    /**
+     * 标题返回
+     */
+    public void hideRightText() {
+        if (rightTextView != null) {
+            rightTextView.setVisibility(View.GONE);
+        }
+    }
+
+    /**
      * 显示用户提示
      */
     public void showToast(String message) {
@@ -60,10 +126,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onResume();
     }
 
-    @Override
-    public void onBackPressed() {
-        return;
-    }
+//    @Override
+//    public void onBackPressed() {
+//        return;
+//    }
 
 
 }

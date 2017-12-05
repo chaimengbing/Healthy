@@ -25,13 +25,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FunctionActivity extends BaseActivity {
 
-    //title toolbar
-    @BindView(R.id.back_textview)
-    TextView backTextView;
-    @BindView(R.id.title_textview)
-    TextView titleTextView;
-    @BindView(R.id.right_textview)
-    TextView rightTextView;
     private String functionName = "";
 
     //登录消息
