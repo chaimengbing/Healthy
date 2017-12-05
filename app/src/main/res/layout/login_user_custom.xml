@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/x20"
         android:gravity="center"
         android:text="@string/user_name"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/font_size_14" />
 
 
@@ -30,8 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/x5"
         android:gravity="center"
-        android:text="@string/login_time"
-        android:textColor="@color/black"
+        android:text="@string/login_time_cus"
+        android:textColor="@color/white"
         android:textSize="@dimen/font_size_14" />
 
 </LinearLayout>

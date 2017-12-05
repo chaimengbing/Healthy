@@ -10,7 +10,7 @@
 
     <include layout="@layout/login_user_custom" />
 
-    <include layout="@layout/custom_quarantine" />
+    <include layout="@layout/custom_case_idea" />
 
 
 </LinearLayout>
