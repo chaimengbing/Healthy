@@ -51,9 +51,9 @@ public class LoginActivity extends BaseActivity {
 
     @OnClick(R.id.login_button)
     void loginButton() {
-        if (checkArgument()) {
-            login();
-        }
+//        if (checkArgument()) {
+        login();
+//        }
     }
 
     /**

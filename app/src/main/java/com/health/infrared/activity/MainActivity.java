@@ -35,6 +35,7 @@ public class MainActivity extends BaseActivity {
 
         //红外图片
         MainItem mainItem = new MainItem();
+        mainItem.setType(CommEventEntry.TYPE_INFAREDPIC);
         mainItem.setImgId(R.mipmap.ic_launcher);
         mainItem.setName(getString(R.string.Infrared_pic));
         mainList.add(mainItem);
@@ -47,6 +48,7 @@ public class MainActivity extends BaseActivity {
 
         //检疫查验
         MainItem mainItem2 = new MainItem();
+        mainItem2.setType(CommEventEntry.TYPE_QUARANTINE);
         mainItem2.setImgId(R.mipmap.ic_launcher);
         mainItem2.setName(getString(R.string.quarantine));
         mainList.add(mainItem2);
@@ -97,9 +99,9 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MainItem mainItem = (MainItem) mainGriAdapter.getItem(position);
-                if (position == 2) {
+                if (position == 2 || position == 0) {
                     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    intent.putExtra(CommEventEntry.HOME_NAME, mainItem.getName());
+                    intent.putExtra(CommEventEntry.MAIN_TYPE, mainItem);
                     startActivity(intent);
                 } else {
                     showToast(mainItem.getName() + " 功能尚未开放");

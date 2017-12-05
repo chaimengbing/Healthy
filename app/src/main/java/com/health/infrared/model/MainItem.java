@@ -1,10 +1,12 @@
 package com.health.infrared.model;
 
+import java.io.Serializable;
+
 /**
  * Created by 123 on 2017/12/4.
  */
 
-public class MainItem {
+public class MainItem implements Serializable {
 
     private int type;
     private String name;

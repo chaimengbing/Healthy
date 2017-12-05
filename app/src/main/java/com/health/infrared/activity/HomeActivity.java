@@ -7,6 +7,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.health.infrared.R;
+import com.health.infrared.activity.infraredpic.RapidRegistrationActivity;
 import com.health.infrared.activity.quarantine.CaseHandleActivity;
 import com.health.infrared.activity.quarantine.CollectSampleActivity;
 import com.health.infrared.activity.quarantine.InquireActivity;
@@ -27,6 +28,7 @@ import butterknife.BindView;
 public class HomeActivity extends BaseActivity {
     //title toolbar
     private String homeName = "";
+    private MainItem mainItem;
 
     @BindView(R.id.main_gridview)
     GridView mainGridView;
@@ -42,7 +44,58 @@ public class HomeActivity extends BaseActivity {
     @Override
     public void initData() {
         homeList = new ArrayList<>();
+        if (getIntent() != null) {
+            mainItem = (MainItem) getIntent().getSerializableExtra(CommEventEntry.MAIN_TYPE);
+            if (mainItem != null) {
+                homeName = mainItem.getName();
+            }
+        }
+        if (mainItem != null) {
+            if (mainItem.getType() == CommEventEntry.TYPE_INFAREDPIC) {
+                initInfaredpic();
+            } else if (mainItem.getType() == CommEventEntry.TYPE_QUARANTINE) {
+                initQuarantine();
+            }
+        }
+    }
 
+    /**
+     * 初始化红外图片首页
+     */
+    private void initInfaredpic() {
+        //快速登记
+        HomeItem homeItem = new HomeItem();
+        homeItem.setType(CommEventEntry.INFAREDPIC_RAPID_REGISTRATION);
+        homeItem.setImgId(R.mipmap.ic_launcher);
+        homeItem.setName("快速登记");
+        homeList.add(homeItem);
+
+        //漏警处置
+        HomeItem homeItem1 = new HomeItem();
+        homeItem1.setType(CommEventEntry.INFAREDPIC_DISPOSITION);
+        homeItem1.setImgId(R.mipmap.ic_launcher);
+        homeItem1.setName("漏警处置");
+        homeList.add(homeItem1);
+
+        //警情浏览
+        HomeItem homeItem2 = new HomeItem();
+        homeItem2.setType(CommEventEntry.INFAREDPIC_ALERT_BROWSE);
+        homeItem2.setImgId(R.mipmap.ic_launcher);
+        homeItem2.setName("警情浏览");
+        homeList.add(homeItem2);
+
+        //追踪登记
+        HomeItem homeItem3 = new HomeItem();
+        homeItem3.setType(CommEventEntry.INFAREDPIC_REGISTRATION);
+        homeItem3.setImgId(R.mipmap.ic_launcher);
+        homeItem3.setName("追踪登记");
+        homeList.add(homeItem3);
+    }
+
+    /**
+     * 初始检疫首页
+     */
+    private void initQuarantine() {
         //查验登记
         HomeItem homeItem = new HomeItem();
         homeItem.setType(CommEventEntry.QUARANTINE_REGISTRATION);
@@ -77,14 +130,11 @@ public class HomeActivity extends BaseActivity {
         homeItem4.setImgId(R.mipmap.ic_launcher);
         homeItem4.setName("采集样品");
         homeList.add(homeItem4);
-
     }
+
 
     @Override
     public void initComponentViews() {
-        if (getIntent() != null) {
-            homeName = getIntent().getStringExtra(CommEventEntry.HOME_NAME);
-        }
         initToolbar();
         homeGriAdapter = new HomeGriAdapter(getApplicationContext(), homeList);
         mainGridView.setAdapter(homeGriAdapter);
@@ -108,6 +158,9 @@ public class HomeActivity extends BaseActivity {
                         break;
                     case CommEventEntry.QUARANTINE_COLLECT_SAMPLE:
                         intent = new Intent(getApplicationContext(), CollectSampleActivity.class);
+                        break;
+                    case CommEventEntry.INFAREDPIC_RAPID_REGISTRATION:
+                        intent = new Intent(getApplicationContext(), RapidRegistrationActivity.class);
                         break;
                     default:
                         break;
