@@ -3,14 +3,13 @@ package com.health.infrared.activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.health.infrared.R;
 import com.health.infrared.adapter.TabFragmentPagerAdapter;
 import com.health.infrared.commconfig.CommEventEntry;
-import com.health.infrared.fragment.QuarantineEnterFragment;
-import com.health.infrared.fragment.QuarantineFragment;
+import com.health.infrared.fragment.quarantine.EpidemiologicalFragment;
+import com.health.infrared.fragment.quarantine.ClinicalFragment;
 import com.health.infrared.utils.DateUtil;
 
 import java.util.ArrayList;
@@ -55,8 +54,8 @@ public class FunctionActivity extends BaseActivity {
         if (getIntent() != null) {
             functionName = getIntent().getStringExtra(CommEventEntry.HOME_NAME);
         }
-        functionFragment.add(new QuarantineFragment());
-        functionFragment.add(new QuarantineEnterFragment());
+        functionFragment.add(new ClinicalFragment());
+        functionFragment.add(new EpidemiologicalFragment());
     }
 
     @Override

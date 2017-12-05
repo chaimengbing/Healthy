@@ -26,7 +26,7 @@ public class CaseHandleActivity extends BaseActivity {
 
     @Override
     public int getLayoutView() {
-        return R.layout.activity_registration;
+        return R.layout.activity_case_handle;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class CaseHandleActivity extends BaseActivity {
     @Override
     public void initComponentViews() {
         if (getIntent() != null) {
-            homeName =  getIntent().getStringExtra(CommEventEntry.HOME_NAME);
+            homeName = getIntent().getStringExtra(CommEventEntry.HOME_NAME);
         }
         initToolbar();
     }

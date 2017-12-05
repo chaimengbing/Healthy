@@ -25,5 +25,25 @@
     <string name="login_time">登录时间</string>
     <string name="forget_pwd">找回密码</string>
 
+    <!-- 流行病学调查 -->
+    <string name="clinical">临床表现</string>
+    <string name="epidemiological">流行病学因素调查</string>
+    <string name="case_idea">初步判断及病例处理意见</string>
+
+    <!-- 医学排查 -->
+    <string name="patients">病人主述</string>
+    <string name="check_hody">体格检查</string>
+    <string name="sampling_situation">采样情况</string>
+    <string name="check_laboratory">实验室检查</string>
+    <string name="first_visit_case_handle">初诊及病例处理意见</string>
+    <string name="hospital_stand">送医院情况</string>
+    <string name="supervise_stand">后续监管情况</string>
+    <string name="disinfected_stand">消毒处理情况</string>
+
+    <!-- 采集样品 -->
+    <string name="collection_stand">采集情况</string>
+    <string name="clinical_feature">临床表现</string>
+    <string name="first_visit_handle">初步诊断意见</string>
+
 
 </resources>

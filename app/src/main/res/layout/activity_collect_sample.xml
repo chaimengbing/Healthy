@@ -12,7 +12,7 @@
     <include layout="@layout/login_user_custom" />
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/tablayout"
+        android:id="@+id/collect_tablayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/x80"
         android:background="@drawable/border_bottom"
@@ -31,7 +31,7 @@
         app:tabTextColor="@color/black"></android.support.design.widget.TabLayout>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/function_viewpager"
+        android:id="@+id/collect_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/x10" />

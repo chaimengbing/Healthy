@@ -1,16 +1,26 @@
 package com.health.infrared.activity.quarantine;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.TextView;
 
 import com.health.infrared.R;
 import com.health.infrared.activity.BaseActivity;
+import com.health.infrared.adapter.TabFragmentPagerAdapter;
 import com.health.infrared.commconfig.CommEventEntry;
+import com.health.infrared.fragment.quarantine.CaseIdeaFragment;
+import com.health.infrared.fragment.quarantine.ClinicalFragment;
+import com.health.infrared.fragment.quarantine.EpidemiologicalFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 
 /**
- * 流行调查
+ * 流行病学调查
  * Created by 123 on 2017/12/5.
  */
 
@@ -23,6 +33,15 @@ public class InquireActivity extends BaseActivity {
     @BindView(R.id.right_textview)
     TextView rightTextView;
     private String homeName = "";
+
+    @BindView(R.id.inquire_tablayout)
+    TabLayout tableLayout;
+    @BindView(R.id.inquire_viewpager)
+    ViewPager viewPager;
+
+    private String[] functionArray = null;
+    private List<Fragment> functionFragment = new ArrayList<>();
+
     @Override
     public int getLayoutView() {
         return R.layout.activity_inquire;
@@ -30,15 +49,19 @@ public class InquireActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
+        functionArray = new String[]{getString(R.string.clinical), getString(R.string.epidemiological), getString(R.string.case_idea)};
+        functionFragment.add(new ClinicalFragment());
+        functionFragment.add(new EpidemiologicalFragment());
+        functionFragment.add(new CaseIdeaFragment());
     }
 
     @Override
     public void initComponentViews() {
-        if (getIntent() != null){
+        if (getIntent() != null) {
             homeName = getIntent().getStringExtra(CommEventEntry.HOME_NAME);
         }
         initToolbar();
+        viewPager.setAdapter(new TabFragmentPagerAdapter(tableLayout, viewPager, getSupportFragmentManager(), functionArray, functionFragment));
     }
 
     private void initToolbar() {

@@ -97,11 +97,11 @@ public class HomeActivity extends BaseActivity {
                     case CommEventEntry.QUARANTINE_REGISTRATION:
                         intent = new Intent(getApplicationContext(), RegistrationActivity.class);
                         break;
-                    case CommEventEntry.QUARANTINE_MEDIACAL_EXAMINA:
-                        intent = new Intent(getApplicationContext(), MedicalExaminationActivity.class);
-                        break;
                     case CommEventEntry.QUARANTINE_INQUIRE:
                         intent = new Intent(getApplicationContext(), InquireActivity.class);
+                        break;
+                    case CommEventEntry.QUARANTINE_MEDIACAL_EXAMINA:
+                        intent = new Intent(getApplicationContext(), MedicalExaminationActivity.class);
                         break;
                     case CommEventEntry.QUARANTINE_CASE_HANDLE:
                         intent = new Intent(getApplicationContext(), CaseHandleActivity.class);
