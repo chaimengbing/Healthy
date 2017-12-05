@@ -50,5 +50,7 @@
 
     <string name="save">保存</string>
     <string name="close">结束放行</string>
+    <string name="rash">皮疹/疱疹部位</string>
+    <string name="other">其他表现</string>
 
 </resources>
