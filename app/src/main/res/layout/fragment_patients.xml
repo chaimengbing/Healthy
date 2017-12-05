@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/patients"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x250"
+            android:background="@drawable/free_rounded"
+            android:hint="@string/patients"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+</ScrollView>

@@ -4,6 +4,27 @@
         <item>出境</item>
         <item>入境</item>
     </array>
+    <array name="sampling">
+        <item>无样本</item>
+        <item>有样本</item>
+    </array>
+
+    <array name="check_result">
+        <item>无</item>
+        <item>其他</item>
+        <item>血常规检查结果</item>
+    </array>
+    <array name="x_pic_check_result">
+        <item>无</item>
+        <item>其他</item>
+        <item>两肺无主质性病变，心脏大小形态正常，双侧横膈光滑活动自如</item>
+    </array>
+
+    <array name="disinfected_stand">
+        <item>由口岸工作部按口岸工作部消毒隔离工作规程对检疫隔离室及相关排查设施设备进行消毒处理。</item>
+        <item>已联系服务分中心对检疫隔离室及相关排查设施设备进行除虫、消毒处理。</item>
+        <item>其他</item>
+    </array>
 
     <array name="handle_result">
         <item>1.采咽拭子，发就诊方便卡</item>

@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/first_visit_handle"
-        android:textColor="@color/black" />
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60"
+            android:entries="@array/diagnosis"
+            android:spinnerMode="dropdown"></Spinner>
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x160" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/x10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/x10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/close"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

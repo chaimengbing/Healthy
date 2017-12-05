@@ -1,14 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/check_laboratory"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（一）血常规检查结果（如果有）"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="采样照片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检测照片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X光检测照片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/check_result">
+
+            </Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/free_rounded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <Button
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@drawable/custom_button"
+                    android:text="采样拍照"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <Button
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@drawable/custom_button"
+                    android:text="检测照片"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <Button
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@drawable/custom_button"
+                    android:text="X光检测拍照"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="检疫人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（二）快速试剂监测结果（如果有）"
+            android:textColor="@color/black" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:hint="其他"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="检疫人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（三）X光图像及检查结果（如果有）"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/x_pic_check_result">
+
+        </Spinner>
+
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:hint="其他"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="检疫人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+    </LinearLayout>
+</ScrollView>

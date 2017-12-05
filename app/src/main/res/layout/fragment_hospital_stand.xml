@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/hospital_stand"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="接病人时间" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="医院电话" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="医院最终诊断结果"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:background="@drawable/free_rounded"
+            android:hint="结果"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="核实人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+    </LinearLayout>
+</ScrollView>

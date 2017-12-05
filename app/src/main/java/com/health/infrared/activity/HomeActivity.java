@@ -121,7 +121,13 @@ public class HomeActivity extends BaseActivity {
     }
 
     private void initToolbar() {
-        backTextView.setVisibility(View.GONE);
+        backTextView.setText(R.string.back);
+        backTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         titleTextView.setText(homeName);
         rightTextView.setVisibility(View.GONE);
     }

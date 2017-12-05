@@ -58,6 +58,13 @@ public class RegistrationActivity extends BaseActivity {
         titleTextView.setText(homeName);
         rightTextView.setText(R.string.entry);
 
+        rightTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         if (timeTextView != null) {
             timeTextView.setText(DateUtil.getCurrentTime());
         }

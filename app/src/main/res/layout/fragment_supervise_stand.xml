@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/supervise_stand"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果确诊为传染病病例，密切接触者追踪及后续监管情况"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/free_rounded"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="负责人" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+    </LinearLayout>
+</ScrollView>

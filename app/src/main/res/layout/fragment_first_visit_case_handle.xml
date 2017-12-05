@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/first_visit_case_handle"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初步诊断意见"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/free_rounded"
+            android:hint="意见"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="检疫人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@drawable/custom_button"
+            android:text="传染病风险提示"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:text="病例处理意见"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/free_rounded"
+            android:hint="意见"
+            android:textSize="@dimen/font_size_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="是否发放就诊方便卡"
+                android:textSize="@dimen/font_size_12" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="检疫人员" />
+
+        <EditText
+            style="@style/comm_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期" />
+    </LinearLayout>
+</ScrollView>

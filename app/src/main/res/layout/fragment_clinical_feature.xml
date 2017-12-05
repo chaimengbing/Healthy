@@ -1,221 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/clinical_feature"
             android:textColor="@color/black" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
 
-        <CheckBox android:id="@+id/checkBox1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="发热"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="畏寒"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="呼吸困难"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="咳嗽"
-            android:layout_weight="1"/>
+            android:layout_gravity="center">
 
-    </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发热" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <CheckBox android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="咳痰"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="流涕"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="头痛、全身酸痛"
-            android:layout_weight="1"/>
-        <CheckBox android:id="@+id/checkBox8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="咽痛"
-            android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="畏寒" />
 
-    </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="呼吸困难" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="乏力"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="眼眶红"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="面红"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="颈红"
-            android:layout_weight="1"/>
-    </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="咳嗽" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="胸红"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="结膜充血"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="恶心"
-            android:layout_weight="1"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="呕吐"
-            android:layout_weight="1"/>
+        </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="咳痰" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="流涕" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头痛、全身酸痛" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="咽痛" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="腹痛"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="乏力" />
+
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="腹泻"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="眼眶红" />
+
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="颈项强直"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="面红" />
+
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="嗜睡"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="颈红" />
+        </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="肌肉抽搐"
-                android:layout_weight="1"/>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="皮疹"
-                android:layout_weight="1"/>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="疱疹"
-                android:layout_weight="1"/>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="呼吸急促"
-                android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/rash"
-            android:textColor="@color/black" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            style="@style/comm_edit_style"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x100"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/other"
-            android:textColor="@color/black" />
-    </LinearLayout>
+            android:layout_gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            style="@style/comm_edit_style"
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="胸红" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="结膜充血" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="恶心" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="呕吐" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x100"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
-</LinearLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="腹痛" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="腹泻" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="颈项强直" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="嗜睡" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="肌肉抽搐" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="皮疹" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="疱疹" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="呼吸急促" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/rash"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/comm_edit_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/other"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/comm_edit_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
