@@ -10,17 +10,15 @@ import com.health.infrared.R;
 import com.health.infrared.activity.BaseActivity;
 import com.health.infrared.adapter.TabFragmentPagerAdapter;
 import com.health.infrared.commconfig.CommEventEntry;
-import com.health.infrared.fragment.quarantine.CaseIdeaFragment;
 import com.health.infrared.fragment.quarantine.CheckBodyFragment;
 import com.health.infrared.fragment.quarantine.CheckLaboratoryFragment;
-import com.health.infrared.fragment.quarantine.ClinicalFragment;
 import com.health.infrared.fragment.quarantine.DisinfectedStandFragment;
-import com.health.infrared.fragment.quarantine.EpidemiologicalFragment;
 import com.health.infrared.fragment.quarantine.FirstVisitCaseHandleFragment;
 import com.health.infrared.fragment.quarantine.HospitalStandFragment;
 import com.health.infrared.fragment.quarantine.PatientsFragment;
 import com.health.infrared.fragment.quarantine.SamplingSituationFragment;
 import com.health.infrared.fragment.quarantine.SuperviseStandFragment;
+import com.health.infrared.utils.DateUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +38,8 @@ public class MedicalExaminationActivity extends BaseActivity {
     TextView titleTextView;
     @BindView(R.id.right_textview)
     TextView rightTextView;
+    @BindView(R.id.time_textview)
+    TextView timeTextView;
     private String homeName = "";
 
     @BindView(R.id.examina_tablayout)
@@ -94,5 +94,9 @@ public class MedicalExaminationActivity extends BaseActivity {
         });
         titleTextView.setText(homeName);
         rightTextView.setVisibility(View.GONE);
+
+        if (timeTextView != null) {
+            timeTextView.setText(DateUtil.getCurrentTime());
+        }
     }
 }

@@ -7,6 +7,8 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="gray">#aeaeae</color>
+    <!--淡蓝色-->
+    <color name="system_blue">#00b9ef</color>
 
     <color name="button_top_bottom_focused_solid">@color/colorPrimary</color>
     <color name="button_top_bottom_focused_storke">@color/colorPrimaryDark</color>

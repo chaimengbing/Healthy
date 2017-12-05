@@ -23,7 +23,7 @@
     <string name="red_pic">红外图片</string>
     <string name="user_name">登录人</string>
     <string name="login_time">登录时间</string>
-    <string name="login_time_cus">2017.12.5</string>
+    <string name="login_time_cus">2017.12.6</string>
     <string name="forget_pwd">找回密码</string>
 
     <!-- 流行病学调查 -->
@@ -45,6 +45,8 @@
     <string name="collection_stand">采集情况</string>
     <string name="clinical_feature">临床表现</string>
     <string name="first_visit_handle">初步诊断意见</string>
+    <string name="system_name">智慧卫生检疫查验监管系统</string>
+    <string name="entry">录入</string>
 
 
 </resources>

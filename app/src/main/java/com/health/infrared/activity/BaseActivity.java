@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.health.infrared.R;
+import com.health.infrared.utils.DateUtil;
 import com.orhanobut.logger.Logger;
 
 import butterknife.BindView;
@@ -28,6 +29,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     TextView titleTextView;
     @BindView(R.id.right_textview)
     TextView rightTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

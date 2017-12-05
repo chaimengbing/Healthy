@@ -52,14 +52,14 @@ public class HomeActivity extends BaseActivity {
 
         //流行病学调查
         HomeItem homeItem1 = new HomeItem();
-        homeItem1.setType(CommEventEntry.QUARANTINE_MEDIACAL_EXAMINA);
+        homeItem1.setType(CommEventEntry.QUARANTINE_INQUIRE);
         homeItem1.setImgId(R.mipmap.ic_launcher);
         homeItem1.setName("流行病学调查");
         homeList.add(homeItem1);
 
         //医学排查
         HomeItem homeItem2 = new HomeItem();
-        homeItem2.setType(CommEventEntry.QUARANTINE_INQUIRE);
+        homeItem2.setType(CommEventEntry.QUARANTINE_MEDIACAL_EXAMINA);
         homeItem2.setImgId(R.mipmap.ic_launcher);
         homeItem2.setName("医学排查");
         homeList.add(homeItem2);

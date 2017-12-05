@@ -6,6 +6,7 @@ import android.widget.TextView;
 import com.health.infrared.R;
 import com.health.infrared.activity.BaseActivity;
 import com.health.infrared.commconfig.CommEventEntry;
+import com.health.infrared.utils.DateUtil;
 
 import butterknife.BindView;
 
@@ -24,6 +25,8 @@ public class RegistrationActivity extends BaseActivity {
     @BindView(R.id.right_textview)
     TextView rightTextView;
     private String homeName = "";
+    @BindView(R.id.time_textview)
+    TextView timeTextView;
 
     @Override
     public int getLayoutView() {
@@ -53,6 +56,10 @@ public class RegistrationActivity extends BaseActivity {
             }
         });
         titleTextView.setText(homeName);
-        rightTextView.setVisibility(View.GONE);
+        rightTextView.setText(R.string.entry);
+
+        if (timeTextView != null) {
+            timeTextView.setText(DateUtil.getCurrentTime());
+        }
     }
 }

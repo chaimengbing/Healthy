@@ -13,6 +13,7 @@ import com.health.infrared.commconfig.CommEventEntry;
 import com.health.infrared.fragment.quarantine.ClinicalFeatureFragment;
 import com.health.infrared.fragment.quarantine.CollectionStandFragment;
 import com.health.infrared.fragment.quarantine.FirstVisitHandleFragment;
+import com.health.infrared.utils.DateUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,8 @@ public class CollectSampleActivity extends BaseActivity {
     @BindView(R.id.right_textview)
     TextView rightTextView;
     private String homeName = "";
+    @BindView(R.id.time_textview)
+    TextView timeTextView;
 
     @BindView(R.id.collect_tablayout)
     TabLayout tableLayout;
@@ -75,5 +78,8 @@ public class CollectSampleActivity extends BaseActivity {
         });
         titleTextView.setText(homeName);
         rightTextView.setVisibility(View.GONE);
+        if (timeTextView != null) {
+            timeTextView.setText(DateUtil.getCurrentTime());
+        }
     }
 }

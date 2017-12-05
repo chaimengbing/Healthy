@@ -1,14 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="45dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/epidemiological"
-        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x20"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1.发病前4周内旅行史，以及所来自国家/地区是否流行同类症状的疾病"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="2.发病前两周接触过类似症状病人的情况，如果有，录入类似症状病人信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="接触类似症状病人情况描述"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="3.有无怀孕"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="4.有无晕机（车、船)史"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="5.如近期有使用药，具体情况为"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="6.如有既往传染病史，具体情况为"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="7.是否曾入院诊断？如果是，诊断结果"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="8.如有从事动物饲养、宰杀、捕捉或标本制作工作，具体情况为"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="9.如有从事病原生物学研究或医务工作，具体情况为"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="10.蚊虫叮咬情况"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="11.近期输血献血情况"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="无" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:text="12.其他相关因素"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+
+        <EditText
+            style="@style/comm_edit_no_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="无" />
+
+
+    </LinearLayout>
+</ScrollView>

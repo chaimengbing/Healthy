@@ -13,6 +13,7 @@ import com.health.infrared.commconfig.CommEventEntry;
 import com.health.infrared.fragment.quarantine.CaseIdeaFragment;
 import com.health.infrared.fragment.quarantine.ClinicalFragment;
 import com.health.infrared.fragment.quarantine.EpidemiologicalFragment;
+import com.health.infrared.utils.DateUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,8 @@ public class InquireActivity extends BaseActivity {
     @BindView(R.id.right_textview)
     TextView rightTextView;
     private String homeName = "";
+    @BindView(R.id.time_textview)
+    TextView timeTextView;
 
     @BindView(R.id.inquire_tablayout)
     TabLayout tableLayout;
@@ -75,5 +78,9 @@ public class InquireActivity extends BaseActivity {
         });
         titleTextView.setText(homeName);
         rightTextView.setVisibility(View.GONE);
+
+        if (timeTextView != null) {
+            timeTextView.setText(DateUtil.getCurrentTime());
+        }
     }
 }

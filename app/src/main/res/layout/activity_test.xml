@@ -10,7 +10,7 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/test"></Spinner>
+        android:entries="@array/border"></Spinner>
 
     <Button
         android:id="@+id/popwindow_button"
