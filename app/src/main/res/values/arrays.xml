@@ -9,4 +9,11 @@
         <item>1.采咽拭子，发就诊方便卡</item>
         <item>2.采血样送检，发就诊方便卡，嘱咐其注意防蚊虫叮咬并尽快就医</item>
     </array>
+
+    <array name="diagnosis">
+        <item>发热待查</item>
+        <item>上呼吸道感染</item>
+        <item>腹泻待查</item>
+        <item>其他</item>
+    </array>
 </resources>

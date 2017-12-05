@@ -48,5 +48,7 @@
     <string name="system_name">智慧卫生检疫查验监管系统</string>
     <string name="entry">录入</string>
 
+    <string name="save">保存</string>
+    <string name="close">结束放行</string>
 
 </resources>

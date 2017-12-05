@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Health.iml" filepath="$PROJECT_DIR$/Health.iml" />
       <module fileurl="file://D:\Healthy\Health.iml" filepath="D:\Healthy\Health.iml" />
+      <module fileurl="file://G:\junlz\Healthy\Health.iml" filepath="G:\junlz\Healthy\Health.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Healthy.iml" filepath="$PROJECT_DIR$/Healthy.iml" />
       <module fileurl="file://F:\minework\hehe\Health\Healthy.iml" filepath="F:\minework\hehe\Health\Healthy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

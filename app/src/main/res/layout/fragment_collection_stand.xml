@@ -11,4 +11,45 @@
         android:text="@string/collection_stand"
         android:textColor="@color/black" />
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:entries="@array/diagnosis"
+        android:spinnerMode="dropdown"></Spinner>
+
+    <EditText
+        style="@style/comm_edit_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/free_login_button"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/x10"/>
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/free_login_button"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/x10"/>
+
+    </LinearLayout>
 </LinearLayout>
+
