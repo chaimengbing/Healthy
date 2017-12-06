@@ -41,9 +41,7 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.all { output ->
-//            if (output.name.endsWith('.apk')) {
             outputFileName = "Healthy_V${defaultConfig.versionName}_D" + getDate() + ".apk"
-//            }
         }
     }
 
