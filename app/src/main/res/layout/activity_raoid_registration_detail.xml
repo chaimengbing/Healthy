@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.health.infrared.activity.infraredpic.RapidRegistrationActivity">
+    tools:context="com.health.infrared.activity.infraredpic.RapidRegistrationDetailActivity">
 
     <include layout="@layout/custom_toolbar" />
 
@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:orientation="vertical">
 
             <LinearLayout
@@ -82,10 +83,16 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"></LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:layout_margin="@dimen/x20"
+        android:layout_marginTop="@dimen/x30"
         android:background="@drawable/custom_button"
         android:text="提交"
         android:textColor="@color/white" />

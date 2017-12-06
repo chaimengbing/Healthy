@@ -24,18 +24,19 @@ public class CommEventEntry {
     public final static int QUARANTINE_MEDIACAL_EXAMINA = 2;
     public final static int QUARANTINE_CASE_HANDLE = 3;
     public final static int QUARANTINE_COLLECT_SAMPLE = 4;
+    public final static int QUARANTINE_SUPERVISE = 5;
 
     /**
      * 红外图片
      */
     //快速登记
-    public final static int INFAREDPIC_RAPID_REGISTRATION = 5;
+    public final static int INFAREDPIC_RAPID_REGISTRATION = 6;
     //漏警处置
-    public final static int INFAREDPIC_DISPOSITION = 6;
+    public final static int INFAREDPIC_DISPOSITION = 7;
     //警情浏览
-    public final static int INFAREDPIC_ALERT_BROWSE = 7;
+    public final static int INFAREDPIC_ALERT_BROWSE = 8;
     //追踪登记
-    public final static int INFAREDPIC_REGISTRATION = 8;
+    public final static int INFAREDPIC_REGISTRATION = 9;
 
 
 }

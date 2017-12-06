@@ -112,7 +112,7 @@ public class MainActivity extends BaseActivity {
 
     private void initToolbar() {
         backTextView.setVisibility(View.GONE);
-        titleTextView.setText(R.string.main_home);
+        titleTextView.setText(R.string.system_name);
         rightTextView.setVisibility(View.GONE);
     }
 

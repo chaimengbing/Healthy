@@ -14,7 +14,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/x60"
         android:listSelector="@color/transparent"
-        android:numColumns="3"
         android:verticalSpacing="@dimen/x60" />
 
 </LinearLayout>

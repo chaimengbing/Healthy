@@ -1,5 +1,12 @@
 apply plugin: 'com.android.application'
 
+//获取时间戳
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -7,15 +14,39 @@ android {
         minSdkVersion 19
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            storeFile file("/keystore/healthy.jks")
+            storePassword "healthy**"
+            keyAlias "healthyAlias"
+            keyPassword "healthy**"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
         }
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+//            if (output.name.endsWith('.apk')) {
+            outputFileName = "Healthy_V${defaultConfig.versionName}_D" + getDate() + ".apk"
+//            }
+        }
+    }
+
     productFlavors {
     }
     allprojects {
@@ -24,6 +55,7 @@ android {
             maven { url "https://jitpack.io" }
         }
     }
+
 }
 
 dependencies {

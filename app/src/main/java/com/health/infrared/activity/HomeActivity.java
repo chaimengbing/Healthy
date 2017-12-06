@@ -53,8 +53,10 @@ public class HomeActivity extends BaseActivity {
         if (mainItem != null) {
             if (mainItem.getType() == CommEventEntry.TYPE_INFAREDPIC) {
                 initInfaredpic();
+                mainGridView.setNumColumns(2);
             } else if (mainItem.getType() == CommEventEntry.TYPE_QUARANTINE) {
                 initQuarantine();
+                mainGridView.setNumColumns(3);
             }
         }
     }
@@ -130,6 +132,13 @@ public class HomeActivity extends BaseActivity {
         homeItem4.setImgId(R.mipmap.caijiyangpin);
         homeItem4.setName("采集样品");
         homeList.add(homeItem4);
+
+        //后续监管
+        HomeItem homeItem5 = new HomeItem();
+        homeItem5.setType(CommEventEntry.QUARANTINE_SUPERVISE);
+        homeItem5.setImgId(R.mipmap.houxujianguan);
+        homeItem5.setName("后续监管");
+        homeList.add(homeItem5);
     }
 
 
