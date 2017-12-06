@@ -15,43 +15,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="排除传染病可能，放行"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="按照呼吸道传播途径传染病进行排查和处置"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="按照消化道传播途径传染病进行排查和处置"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="按照蚊媒传播途径进行排查和处置"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="暂不符合传染病诊断标准，放行"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="按照其他途径传染病进行排查和处置"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="其他"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
     </RadioGroup>
 

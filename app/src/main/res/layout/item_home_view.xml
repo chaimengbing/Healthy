@@ -8,8 +8,10 @@
 
     <ImageView
         android:id="@+id/title_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:maxHeight="@dimen/x120"
+        android:maxWidth="@dimen/x120"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -18,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/x10"
         android:text="@string/red_pic"
-        android:textColor="@color/black"
+        android:textColor="@color/title"
         android:textSize="@dimen/font_size_14" />
 
 

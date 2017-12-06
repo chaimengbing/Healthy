@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="（一）血常规检查结果（如果有）"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="采样照片"
-                    android:textColor="@color/black"
+                    android:textColor="@color/title"
                     android:textSize="@dimen/font_size_12" />
 
                 <ImageView
@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="检测照片"
-                    android:textColor="@color/black"
+                    android:textColor="@color/title"
                     android:textSize="@dimen/font_size_12" />
 
                 <ImageView
@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="X光检测照片"
-                    android:textColor="@color/black"
+                    android:textColor="@color/title"
                     android:textSize="@dimen/font_size_12" />
 
                 <ImageView
@@ -198,7 +198,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="（二）快速试剂监测结果（如果有）"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <EditText
             style="@style/comm_edit_style"
@@ -223,7 +223,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="（三）X光图像及检查结果（如果有）"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <Spinner
             android:layout_width="match_parent"

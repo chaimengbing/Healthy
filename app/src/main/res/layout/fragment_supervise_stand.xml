@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="如果确诊为传染病病例，密切接触者追踪及后续监管情况"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
         <EditText
             android:layout_width="match_parent"

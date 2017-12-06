@@ -4,16 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.health.infrared.activity.MainActivity">
+    tools:context="com.health.infrared.activity.HomeActivity">
 
-    <include layout="@layout/toolbar_custom" />
+    <include layout="@layout/custom_toolbar" />
 
     <GridView
         android:id="@+id/home_gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/x30"
-        android:verticalSpacing="@dimen/x30"
-        android:numColumns="3" />
+        android:layout_marginTop="@dimen/x60"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/x60" />
 
 </LinearLayout>

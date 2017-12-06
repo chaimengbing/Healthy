@@ -22,11 +22,11 @@
 
     <style name="comm_edit_style">
         <item name="android:textSize">@dimen/font_size_14</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/title</item>
         <item name="android:layout_marginLeft">@dimen/x3</item>
         <item name="android:paddingTop">@dimen/x10</item>
         <item name="android:paddingBottom">@dimen/x10</item>
-        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColorHint">@color/hint</item>
         <item name="android:layout_margin">@dimen/x10</item>
         <item name="android:background">@drawable/free_rounded</item>
         <item name="android:gravity">center_vertical</item>
@@ -34,9 +34,9 @@
 
     <style name="comm_edit_no_margin_style">
         <item name="android:textSize">@dimen/font_size_14</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/title</item>
         <item name="android:paddingBottom">@dimen/x10</item>
-        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColorHint">@color/hint</item>
         <item name="android:background">@drawable/free_rounded</item>
         <item name="android:gravity">center_vertical</item>
     </style>

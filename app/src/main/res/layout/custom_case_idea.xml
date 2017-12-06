@@ -18,43 +18,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="直接放行"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="签订《承诺书》后放行"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="返港治疗"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="隔离留验"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="转送地方医院"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="禁止入境"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="其他方式"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
         </RadioGroup>
 

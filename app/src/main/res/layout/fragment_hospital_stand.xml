@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/x20"
             android:text="医院最终诊断结果"
-            android:textColor="@color/black"
+            android:textColor="@color/title"
             android:textSize="@dimen/font_size_12" />
 
         <EditText

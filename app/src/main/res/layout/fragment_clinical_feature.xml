@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/clinical_feature"
-            android:textColor="@color/black" />
+            android:textColor="@color/title" />
 
 
         <LinearLayout
@@ -221,7 +221,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/rash"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
 
         </LinearLayout>
@@ -245,7 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/other"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
         </LinearLayout>
 
         <LinearLayout

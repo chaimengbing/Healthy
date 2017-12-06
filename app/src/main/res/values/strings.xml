@@ -4,7 +4,7 @@
     <!-- 首页 -->
     <string name="Infrared_pic">红外图片</string>
     <string name="declare">申报验放</string>
-    <string name="quarantine">检疫查验</string>
+    <string name="quarantine">检疫排查</string>
     <string name="test_result">检测结果</string>
     <string name="singal_case">个案溯源</string>
     <string name="browsing">疫情浏览</string>

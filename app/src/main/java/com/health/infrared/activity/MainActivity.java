@@ -116,4 +116,9 @@ public class MainActivity extends BaseActivity {
         rightTextView.setVisibility(View.GONE);
     }
 
+    @Override
+    public void onBackPressed() {
+        return;
+    }
+
 }

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context="com.health.infrared.activity.FunctionActivity">
 
-    <include layout="@layout/toolbar_custom" />
+    <include layout="@layout/custom_toolbar" />
 
     <include layout="@layout/login_user_custom" />
 

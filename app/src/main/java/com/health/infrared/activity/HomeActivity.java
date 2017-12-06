@@ -30,7 +30,7 @@ public class HomeActivity extends BaseActivity {
     private String homeName = "";
     private MainItem mainItem;
 
-    @BindView(R.id.main_gridview)
+    @BindView(R.id.home_gridview)
     GridView mainGridView;
 
     private HomeGriAdapter homeGriAdapter;
@@ -38,7 +38,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public int getLayoutView() {
-        return R.layout.activity_main;
+        return R.layout.activity_home;
     }
 
     @Override
@@ -66,28 +66,28 @@ public class HomeActivity extends BaseActivity {
         //快速登记
         HomeItem homeItem = new HomeItem();
         homeItem.setType(CommEventEntry.INFAREDPIC_RAPID_REGISTRATION);
-        homeItem.setImgId(R.mipmap.ic_launcher);
+        homeItem.setImgId(R.mipmap.kuaisudengji);
         homeItem.setName("快速登记");
         homeList.add(homeItem);
 
         //漏警处置
         HomeItem homeItem1 = new HomeItem();
         homeItem1.setType(CommEventEntry.INFAREDPIC_DISPOSITION);
-        homeItem1.setImgId(R.mipmap.ic_launcher);
+        homeItem1.setImgId(R.mipmap.jingqingchuzhi);
         homeItem1.setName("漏警处置");
         homeList.add(homeItem1);
 
         //警情浏览
         HomeItem homeItem2 = new HomeItem();
         homeItem2.setType(CommEventEntry.INFAREDPIC_ALERT_BROWSE);
-        homeItem2.setImgId(R.mipmap.ic_launcher);
+        homeItem2.setImgId(R.mipmap.jingqignguanli);
         homeItem2.setName("警情浏览");
         homeList.add(homeItem2);
 
         //追踪登记
         HomeItem homeItem3 = new HomeItem();
         homeItem3.setType(CommEventEntry.INFAREDPIC_REGISTRATION);
-        homeItem3.setImgId(R.mipmap.ic_launcher);
+        homeItem3.setImgId(R.mipmap.zhuizongdengji);
         homeItem3.setName("追踪登记");
         homeList.add(homeItem3);
     }
@@ -99,35 +99,35 @@ public class HomeActivity extends BaseActivity {
         //查验登记
         HomeItem homeItem = new HomeItem();
         homeItem.setType(CommEventEntry.QUARANTINE_REGISTRATION);
-        homeItem.setImgId(R.mipmap.ic_launcher);
+        homeItem.setImgId(R.mipmap.chayandengji);
         homeItem.setName("查验登记");
         homeList.add(homeItem);
 
         //流行病学调查
         HomeItem homeItem1 = new HomeItem();
         homeItem1.setType(CommEventEntry.QUARANTINE_INQUIRE);
-        homeItem1.setImgId(R.mipmap.ic_launcher);
+        homeItem1.setImgId(R.mipmap.bingxuediaocha);
         homeItem1.setName("流行病学调查");
         homeList.add(homeItem1);
 
         //医学排查
         HomeItem homeItem2 = new HomeItem();
         homeItem2.setType(CommEventEntry.QUARANTINE_MEDIACAL_EXAMINA);
-        homeItem2.setImgId(R.mipmap.ic_launcher);
+        homeItem2.setImgId(R.mipmap.yixuepaicha);
         homeItem2.setName("医学排查");
         homeList.add(homeItem2);
 
         //病例处置
         HomeItem homeItem3 = new HomeItem();
         homeItem3.setType(CommEventEntry.QUARANTINE_CASE_HANDLE);
-        homeItem3.setImgId(R.mipmap.ic_launcher);
+        homeItem3.setImgId(R.mipmap.bingliguanli);
         homeItem3.setName("病例处置");
         homeList.add(homeItem3);
 
         //采集样品
         HomeItem homeItem4 = new HomeItem();
         homeItem4.setType(CommEventEntry.QUARANTINE_COLLECT_SAMPLE);
-        homeItem4.setImgId(R.mipmap.ic_launcher);
+        homeItem4.setImgId(R.mipmap.caijiyangpin);
         homeItem4.setName("采集样品");
         homeList.add(homeItem4);
     }

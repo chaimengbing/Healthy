@@ -16,7 +16,7 @@
             android:layout_height="@dimen/x250"
             android:background="@drawable/free_rounded"
             android:hint="@string/patients"
-            android:textColor="@color/black"
+            android:textColor="@color/title"
             android:textSize="@dimen/font_size_14" />
     </LinearLayout>
 

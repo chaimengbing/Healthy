@@ -11,42 +11,42 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#A0000000"
-        android:padding="@dimen/x5"
+        android:padding="@dimen/x20"
         android:visibility="visible">
 
-            <TextView
-                android:id="@+id/tv_take_pic"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/x80"
-                android:background="@drawable/border_top_bottom"
-                android:gravity="center"
-                android:text="拍照"
-                android:textColor="#FF757677"
-                android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80"
+            android:background="@drawable/border_top_bottom"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#FF757677"
+            android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/tv_chose_pic"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/x18"
-                android:layout_below="@id/tv_take_pic"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="相册"
-                android:textColor="#FF757677"
-                android:textSize="14sp"
-                android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_chose_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x18"
+            android:layout_below="@id/tv_take_pic"
+            android:background="@drawable/border_bottom"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="#FF757677"
+            android:textSize="14sp"
+            android:visibility="gone" />
 
-            <TextView
-                android:id="@+id/tv_cancle"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/x80"
-                android:layout_below="@id/tv_chose_pic"
-                android:layout_marginTop="@dimen/x25"
-                android:background="@drawable/border_top_bottom"
-                android:gravity="center"
-                android:text="取消"
-                android:textColor="#FF757677"
-                android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80"
+            android:layout_below="@id/tv_chose_pic"
+            android:layout_marginTop="@dimen/x25"
+            android:background="@drawable/border_top_bottom"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FF757677"
+            android:textSize="14sp" />
     </RelativeLayout>
 
 </FrameLayout>

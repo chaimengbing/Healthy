@@ -16,8 +16,6 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,10 +35,7 @@ import com.health.infrared.utils.ToolPicture;
 import com.orhanobut.logger.Logger;
 import com.yalantis.ucrop.UCrop;
 
-import java.io.File;
-
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -229,7 +224,7 @@ public class RegistrationActivity extends BaseActivity implements View.OnClickLi
         options.setHideBottomControls(false);
         options.setFreeStyleCropEnabled(true);
 
-        options.setToolbarColor(ContextCompat.getColor(this, R.color.black));
+        options.setToolbarColor(ContextCompat.getColor(this, R.color.title));
         return uCrop.withOptions(options);
     }
 

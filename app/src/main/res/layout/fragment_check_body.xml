@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="体温"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="脉搏"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="呼吸"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                 style="@style/comm_edit_style"
                 android:layout_width="@dimen/x160"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
                 style="@style/comm_edit_style"
                 android:layout_width="@dimen/x160"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black" />
+                android:textColor="@color/title" />
 
             <TextView
                 android:layout_width="wrap_content"
